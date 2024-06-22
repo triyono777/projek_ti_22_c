@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp/home_screen.dart';
 import 'package:myapp/kontak_screen.dart';
 import 'package:myapp/profil_screen.dart';
+import 'package:myapp/splash_screen.dart';
 
 import 'login_screen.dart';
 
@@ -15,12 +16,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'Projek TI 22C',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: KontakScreen(),
+      home: SplashScreen(),
     );
   }
 }
