@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/kontak_screen.dart';
+import 'package:get/get.dart';
+
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -34,6 +37,8 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             ElevatedButton(
               onPressed: () {
+                // untuk pindah halaman
+                Get.to(()=>KontakScreen());
                 setState(() {
                   label = usernameController.text;
                 });
