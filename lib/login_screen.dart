@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
+import 'package:myapp/home_screen.dart';
 import 'package:myapp/kontak_screen.dart';
 import 'package:get/get.dart';
-
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -26,6 +27,21 @@ class _LoginScreenState extends State<LoginScreen> {
         padding: const EdgeInsets.all(30.0),
         child: Column(
           children: [
+            Image.asset("asset_media/logo_udb.png"),
+            SizedBox(height: 10),
+            InkWell(
+              onTap: () {},
+              child: Image.network(
+                  "https://fikom.udb.ac.id/themes/fakultas-udb/assets/img/logoUDBtext.png"),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            GestureDetector(
+                onTap: () {
+                  Get.off(() => HomeScreen());
+                },
+                child: Lottie.asset("asset_media/panah.json", width: 50)),
             TextField(
               controller: usernameController,
               decoration: InputDecoration(
@@ -38,7 +54,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ElevatedButton(
               onPressed: () {
                 // untuk pindah halaman
-                Get.to(()=>KontakScreen());
+                Get.to(() => KontakScreen());
                 setState(() {
                   label = usernameController.text;
                 });

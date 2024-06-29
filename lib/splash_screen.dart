@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'login_screen.dart';
 
@@ -15,12 +16,14 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Future.delayed(Duration(seconds: 3), () {
       // navigator untuk pindah halaman
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (context) => LoginScreen(),
-        ),
-      );
+      // Navigator.pushReplacement(
+      //   context,
+      //   MaterialPageRoute(
+      //     builder: (context) => LoginScreen(),
+      //   ),
+      // );
+
+      Get.off(() => LoginScreen());
     });
   }
 
