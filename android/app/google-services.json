@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "181224449896",
+    "project_id": "kelas-c-projek-676",
+    "storage_bucket": "kelas-c-projek-676.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181224449896:android:eb215bfe071d8c33d4d8dd",
+        "android_client_info": {
+          "package_name": "com.appkelasc.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8W6ggI2k0rZWwizkMWCD2xoIl5Wod3eE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -3,6 +3,7 @@ import 'package:lottie/lottie.dart';
 import 'package:myapp/home_screen.dart';
 import 'package:myapp/kontak_screen.dart';
 import 'package:get/get.dart';
+import 'package:myapp/widgets/custom_button.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -60,6 +61,10 @@ class _LoginScreenState extends State<LoginScreen> {
                 });
               },
               child: Text("Login"),
+            ),
+            CustomButton(
+              text: "Coba cutom widget",
+              onPressed: () {},
             ),
             Text(label),
           ],
